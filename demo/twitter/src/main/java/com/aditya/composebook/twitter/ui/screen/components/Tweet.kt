@@ -57,7 +57,7 @@ fun Tweet(
                 )
                 Spacer(modifier = Modifier.width(paddingSmall))
                 Image(
-                    painter = painterResource(id = R.drawable.verified),
+                    painter = painterResource(id = R.drawable.ic_twitter_verified_badge),
                     contentDescription = null,
                     modifier = Modifier
                         .size(16.dp)

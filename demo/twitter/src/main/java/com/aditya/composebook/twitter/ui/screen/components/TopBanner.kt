@@ -20,7 +20,7 @@ import com.aditya.composebook.twitter.ui.theme.paddingSmall
 fun TopBanner(
     profileImage: Int = R.drawable.profile,
     logo: Int = R.drawable.twitter_blue,
-    icon: Int = R.drawable.twitter_top_right_icon
+    icon: Int = R.drawable.ic_twitter_top_right_icon
 ) {
     Column(
         modifier = Modifier.fillMaxWidth()
