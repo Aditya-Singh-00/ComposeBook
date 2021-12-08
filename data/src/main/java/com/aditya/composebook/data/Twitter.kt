@@ -6,7 +6,7 @@ import com.aditya.data.R
 val tweet = Tweet(
     userName = "Google",
     userId = "@google",
-    userProfile = R.drawable.google,
+    userProfile = R.drawable.ic_google,
     tweet = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
             "Duis tempus est quis venenatis euismod.",
     tweetImage = R.drawable.image_1,
@@ -21,14 +21,14 @@ val tweets = listOf(
     tweet.copy(
         userName = "Amazon",
         userId = "@amazon",
-        userProfile = R.drawable.amazon,
+        userProfile = R.drawable.ic_amazon,
         tweetImage = R.drawable.image_2,
         tweetTime = "2h"
     ),
     tweet.copy(
         userName = "Apple",
         userId = "@apple",
-        userProfile = R.drawable.apple,
+        userProfile = R.drawable.ic_apple,
         tweetImage = R.drawable.image_3,
         tweetTime = "45s"
     ),

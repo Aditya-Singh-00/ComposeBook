@@ -10,3 +10,4 @@ rootProject.name = "Compose Book"
 include ':app'
 include ':demo:twitter'
 include ':data'
+include ':demo:youtube'

@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/data" />
             <option value="$PROJECT_DIR$/demo" />
             <option value="$PROJECT_DIR$/demo/twitter" />
+            <option value="$PROJECT_DIR$/demo/youtube" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

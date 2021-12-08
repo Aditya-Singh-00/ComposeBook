@@ -1,14 +1,12 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'kotlin-android'
-    id 'kotlin-kapt'
 }
 
 android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.aditya.composebook"
         minSdk 24
         targetSdk 31
         versionCode 1
@@ -64,23 +62,5 @@ dependencies {
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
 
-    //Accompanist-Navigation-Animation
-    implementation("com.google.accompanist:accompanist-navigation-animation:0.18.0")
-
-    //Coil
-    implementation("io.coil-kt:coil-compose:1.4.0")
-
-    //Coroutines
-    implementation ('org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.4.3')
-    implementation ('org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2')
-    implementation ('org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2')
-
-
-    //Material-Icon-Extended
-    implementation "androidx.compose.material:material-icons-extended:$compose_version"
-
-    //Modules
     implementation(project(":data"))
-    implementation(project(":demo:twitter"))
-    implementation(project(":demo:youtube"))
 }
