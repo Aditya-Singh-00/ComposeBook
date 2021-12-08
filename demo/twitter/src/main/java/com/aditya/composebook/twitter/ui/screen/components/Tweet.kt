@@ -5,6 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.MoreVert
@@ -20,15 +21,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.Dp.Companion.Hairline
 import androidx.compose.ui.unit.dp
 import com.aditya.composebook.model.Tweet
 import com.aditya.composebook.twitter.R
 import com.aditya.composebook.twitter.ui.theme.*
 
 @Composable
-fun Tweet(
-    tweet: Tweet
-) {
+fun Tweet(tweet: Tweet) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -38,7 +38,7 @@ fun Tweet(
             painter = painterResource(id = tweet.userProfile),
             contentDescription = null,
             modifier = Modifier
-                .size(50.dp)
+                .size(55.dp)
                 .padding(paddingMedium)
                 .clip(CircleShape),
             contentScale = ContentScale.Inside
@@ -66,12 +66,12 @@ fun Tweet(
                 Spacer(modifier = Modifier.width(paddingSmall))
                 Text(
                     text = tweet.userId,
-                    color = Gray
+                    color = LightBlue
                 )
                 Spacer(modifier = Modifier.width(paddingSmall))
                 Text(
                     text = ". ${tweet.tweetTime}",
-                    color = Gray
+                    color = LightBlue
                 )
                 Box(
                     modifier = Modifier
@@ -79,9 +79,10 @@ fun Tweet(
                         .background(Color.Transparent)
                         .align(Alignment.CenterVertically)
                 ) {
-                    Image(
+                    Icon(
                         imageVector = Icons.Default.MoreVert,
                         contentDescription = null,
+                        tint = LightBlue,
                         modifier = Modifier
                             .size(16.dp)
                             .align(Alignment.CenterEnd)
@@ -111,10 +112,10 @@ fun Tweet(
                     .fillMaxWidth(0.90f),
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
-                Icon(image = Icons.Outlined.ModeComment, count = tweet.commentCount)
-                Icon(image = Icons.Outlined.Repeat, count = tweet.retweetCount)
-                Icon(image = Icons.Outlined.FavoriteBorder, count = tweet.likeCount)
-                Icon(image = Icons.Outlined.Share)
+                TweetIcon(image = Icons.Outlined.ModeComment, count = tweet.commentCount)
+                TweetIcon(image = Icons.Outlined.Repeat, count = tweet.retweetCount)
+                TweetIcon(image = Icons.Outlined.FavoriteBorder, count = tweet.likeCount)
+                TweetIcon(image = Icons.Outlined.Share)
             }
             Spacer(modifier = Modifier.height(paddingMedium))
         }
@@ -122,7 +123,7 @@ fun Tweet(
     Spacer(
         modifier = Modifier
             .fillMaxWidth()
-            .height((0.25).dp)
-            .background(LightGray)
+            .height(Hairline)
+            .background(LightBlue)
     )
 }

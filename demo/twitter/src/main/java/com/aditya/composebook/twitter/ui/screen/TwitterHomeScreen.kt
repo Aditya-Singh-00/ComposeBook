@@ -17,7 +17,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.aditya.composebook.DataProvider
 import com.aditya.composebook.twitter.ui.screen.components.BottomBar
-import com.aditya.composebook.twitter.ui.screen.components.TopBanner
+import com.aditya.composebook.twitter.ui.screen.components.TopBar
 import com.aditya.composebook.twitter.ui.screen.components.Tweet
 import com.aditya.composebook.twitter.ui.theme.Blue
 
@@ -28,12 +28,8 @@ fun TwitterHomeScreen() {
 
     Scaffold(
         modifier = Modifier.fillMaxSize(),
-        topBar = {
-            TopBanner()
-        },
-        bottomBar = {
-            BottomBar()
-        },
+        topBar = { TopBar() },
+        bottomBar = { BottomBar() },
         floatingActionButton = {
             Box(
                 modifier = Modifier
