@@ -19,6 +19,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.aditya.composebook.model.YoutubeVideo
+import com.aditya.composebook.youtube.ui.theme.LightGray
 import com.aditya.composebook.youtube.ui.theme.paddingLarge
 import com.aditya.composebook.youtube.ui.theme.paddingMedium
 import com.aditya.composebook.youtube.ui.theme.paddingSmall
@@ -54,7 +55,7 @@ fun VideoPreview(
             ) {
                 Text(
                     text = video.duration,
-                    style = MaterialTheme.typography.body1
+                    style = MaterialTheme.typography.body2
                 )
             }
         }
@@ -89,15 +90,18 @@ fun VideoPreview(
                     Row {
                         Text(
                             text = video.channelName,
-                            style = MaterialTheme.typography.body2
+                            style = MaterialTheme.typography.body2,
+                            color = LightGray
                         )
                         Text(
                             text = " . ${video.views}",
-                            style = MaterialTheme.typography.body2
+                            style = MaterialTheme.typography.body2,
+                            color = LightGray
                         )
                         Text(
                             text = " . ${video.timesAgo}",
-                            style = MaterialTheme.typography.body2
+                            style = MaterialTheme.typography.body2,
+                            color = LightGray
                         )
                     }
                 }

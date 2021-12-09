@@ -4,6 +4,10 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.Text
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Cast
+import androidx.compose.material.icons.filled.NotificationsNone
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -47,22 +51,23 @@ fun TopBar(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 YoutubeIcon(
-                    icon = R.drawable.ic_youtube_screencast,
+                    icon = Icons.Default.Cast,
                     size = 40.dp
                 )
                 YoutubeIcon(
-                    icon = R.drawable.ic_youtube_bell,
+                    icon = Icons.Default.NotificationsNone,
                     size = 40.dp
                 )
                 YoutubeIcon(
-                    icon = R.drawable.ic_youtube_search,
+                    icon = Icons.Default.Search,
                     size = 40.dp
                 )
                 Image(
                     painter = painterResource(id = R.drawable.profile),
                     contentDescription = null,
                     modifier = Modifier
-                        .size(40.dp)
+                        .padding(end = paddingMedium)
+                        .size(30.dp)
                         .clip(CircleShape),
                     contentScale = ContentScale.Crop
                 )

@@ -63,4 +63,11 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
 
     implementation(project(":data"))
+
+    //Accompanist
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.17.0")
+
+    //Material-Icon-Extended
+    implementation "androidx.compose.material:material-icons-extended:$compose_version"
+
 }

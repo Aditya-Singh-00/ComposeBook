@@ -21,42 +21,42 @@ val youtubeVideos = listOf(
         channelName = "Amazon"
     ),
     youtubeVideo.copy(
-        preview = R.drawable.image_2,
+        preview = R.drawable.image_3,
         channelProfile = R.drawable.ic_apple,
         channelName = "Apple"
     ),
     youtubeVideo.copy(
-        preview = R.drawable.image_2,
+        preview = R.drawable.image_4,
         channelProfile = R.drawable.kotlin,
         channelName = "Kotlin"
     ),
     youtubeVideo.copy(
-        preview = R.drawable.image_2,
+        preview = R.drawable.image_5,
         channelProfile = R.drawable.facebook,
         channelName = "Facebook"
     ),
     youtubeVideo.copy(
-        preview = R.drawable.image_2,
+        preview = R.drawable.image_6,
         channelProfile = R.drawable.jetbrains,
         channelName = "Jetbrains"
     ),
     youtubeVideo.copy(
-        preview = R.drawable.image_2,
+        preview = R.drawable.image_7,
         channelProfile = R.drawable.youtube,
         channelName = "YouTube"
     ),
     youtubeVideo.copy(
-        preview = R.drawable.image_2,
+        preview = R.drawable.image_8,
         channelProfile = R.drawable.gmail,
         channelName = "Gmail"
     ),
     youtubeVideo.copy(
-        preview = R.drawable.image_2,
+        preview = R.drawable.image_9,
         channelProfile = R.drawable.netflix,
         channelName = "Netflix"
     ),
     youtubeVideo.copy(
-        preview = R.drawable.image_2,
+        preview = R.drawable.image_10,
         channelProfile = R.drawable.twitter,
         channelName = "Twitter"
     )

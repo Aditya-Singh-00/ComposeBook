@@ -1,24 +1,21 @@
 package com.aditya.composebook.youtube.ui.screen.components
 
-import androidx.annotation.DrawableRes
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.Icon
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.aditya.composebook.youtube.ui.theme.paddingMedium
-import com.aditya.composebook.youtube.ui.theme.paddingSmall
 
 @Composable
 fun YoutubeIcon(
-    @DrawableRes icon: Int,
-    text: String? = null,
+    icon: ImageVector,
     size: Dp = 25.dp
 ) {
     Box(
@@ -31,7 +28,7 @@ fun YoutubeIcon(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Icon(
-                painter = painterResource(id = icon),
+                imageVector = icon,
                 contentDescription = null
             )
         }
