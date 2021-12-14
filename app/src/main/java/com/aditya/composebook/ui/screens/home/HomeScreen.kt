@@ -4,7 +4,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Switch
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -17,7 +16,6 @@ import androidx.navigation.NavController
 import com.aditya.composebook.ui.theme.White
 import com.aditya.composebook.util.Screen
 import com.aditya.composebook.R
-import com.aditya.composebook.ui.theme.ComposeBookThemeSettings
 import com.aditya.composebook.ui.theme.Padding
 
 @Composable
@@ -36,14 +34,6 @@ fun HomeScreen(
             color = MaterialTheme.colors.onBackground,
             fontWeight = FontWeight.Bold
         )
-//            Switch(
-//                checked = ComposeBookThemeSettings.isDarkThemeEnabled,
-//                onCheckedChange = { ComposeBookThemeSettings.isDarkThemeEnabled = it },
-//                modifier = Modifier
-//                    .padding(Padding.Large.value)
-//                    .align(Alignment.CenterVertically)
-//                    .size(40.dp)
-//            )
 
         Box(
             modifier = Modifier

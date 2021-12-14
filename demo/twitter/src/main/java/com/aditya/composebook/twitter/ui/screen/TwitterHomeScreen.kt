@@ -1,10 +1,11 @@
 package com.aditya.composebook.twitter.ui.screen
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.ExtendedFloatingActionButton
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
@@ -39,13 +40,14 @@ fun TwitterHomeScreen(
             )
         }
     ) {
-        LazyColumn {
-            items(tweets) { tweet ->
-                Tweet(tweet = tweet)
-            }
-            item {
-                Spacer(modifier = Modifier.height(50.dp))
-            }
+        val scrollState = rememberScrollState()
+        Column(
+            modifier = Modifier.verticalScroll(
+                state = scrollState
+            )
+        ) {
+            tweets.forEach { Tweet(it) }
+            Spacer(modifier = Modifier.height(50.dp))
         }
     }
 }

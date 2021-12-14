@@ -83,4 +83,5 @@ dependencies {
     implementation(project(":data"))
     implementation(project(":demo:twitter"))
     implementation(project(":demo:youtube"))
+    implementation(project(":demo:gmail"))
 }

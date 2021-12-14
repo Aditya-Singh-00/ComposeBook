@@ -15,6 +15,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.aditya.composebook.gmail.GmailActivity
 import com.aditya.composebook.twitter.TwitterActivity
 import com.aditya.composebook.ui.theme.Padding
 import com.aditya.composebook.youtube.YoutubeActivity
@@ -47,6 +48,11 @@ fun DemoUi() {
                         "Youtube" -> {
                             context.startActivity(
                                 Intent(context, YoutubeActivity::class.java)
+                            )
+                        }
+                        "Gmail" -> {
+                            context.startActivity(
+                                Intent(context, GmailActivity::class.java)
                             )
                         }
                     }
